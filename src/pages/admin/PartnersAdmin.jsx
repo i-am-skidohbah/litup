@@ -85,7 +85,7 @@ function PartnersAdmin() {
         />
         <button
           type="submit"
-          className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+          className="px-4 py-2 bg-green-600 text-white rounded hover:bg-blue-700"
           disabled={loading}
         >
           Add Partner
@@ -94,7 +94,7 @@ function PartnersAdmin() {
       {error && <div className="text-red-600 mb-2">{error}</div>}
       <div className="flex flex-wrap gap-4">
         {partners.map(partner => (
-          <div key={partner.id} className="flex flex-col items-center border rounded p-2 w-32">
+          <div key={partner.id} className="flex flex-col items-center border border-green-500 rounded p-2 w-32">
             {partner.logoUrl && (
               <img src={partner.logoUrl} alt={partner.name || 'Partner Logo'} className="max-h-16 max-w-full object-contain mb-2" />
             )}

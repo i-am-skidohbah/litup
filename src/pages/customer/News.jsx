@@ -12,6 +12,7 @@ function News() {
   const [search, setSearch] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 6;
+  const DOC_ID = "someDocId";
 
   useEffect(() => {
     const fetchNews = async () => {
@@ -118,7 +119,7 @@ function News() {
                 <p className="mb-2 text-gray-700">{item.summary}</p>
                 <div className="flex justify-end">
                   <Link
-                    to={`/news/${item.id}`}
+                    to={`/news/${DOC_ID}/${item.id}`}  
                     className="text-green-700 font-semibold hover:underline text-sm"
                   >
                     Read More

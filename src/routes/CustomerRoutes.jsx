@@ -16,6 +16,7 @@ import Cart from '../components/Cart';
 import TrainingRegister from '../pages/customer/TrainingRegister';
 import MyProfile from '../pages/customer/MyProfile';
 import NewsDetail from '../components/NewsDetail';
+import MyOrders from '../pages/customer/MyOrders';
 
 
 // ...other customer imports
@@ -41,7 +42,7 @@ export default function CustomerRoutes() {
         <Route path="/signup" element={<CustomerSignup />} />
         <Route path="/profile" element={<MyProfile />} />
         <Route path="/news/:someDocId/:id" element={<NewsDetail />} />
-
+        <Route path="/orders" element={<MyOrders />} />
 
       </Routes>
     </CustomerLayout>

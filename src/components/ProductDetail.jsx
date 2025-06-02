@@ -196,7 +196,7 @@ function ProductDetail() {
           )}
         </div>
       </main>
-      <Footer />
+      
     </div>
   );
 }

@@ -100,8 +100,7 @@ function Navbar() {
               <button className="w-full text-left px-4 py-2 hover:bg-green-50" onClick={() => { setDropdownOpen(false); navigate('/profile'); }}>My Profile</button>
               <button className="w-full text-left px-4 py-2 hover:bg-green-50" onClick={() => { setDropdownOpen(false); navigate('/orders'); }}>My Orders</button>
               <button className="w-full text-left px-4 py-2 hover:bg-green-50" onClick={() => { setDropdownOpen(false); navigate('/saved-items'); }}>My Saved Items</button>
-              <button className="w-full text-left px-4 py-2 hover:bg-green-50" onClick={() => { setDropdownOpen(false); navigate('/wallet'); }}>My Wallet</button>
-              <button className="w-full text-left px-4 py-2 hover:bg-green-50" onClick={() => { setDropdownOpen(false); navigate('/track-order'); }}>Track My Order</button>
+              
               <button
                 className="w-full text-left px-4 py-2 text-red-600 hover:bg-red-50 border-t"
                 onClick={async () => {

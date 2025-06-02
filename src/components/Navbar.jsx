@@ -3,6 +3,7 @@ import { FaShoppingCart, FaUserCircle } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import { auth } from '../FirebaseConfig';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
+import luniLogo from '../assets/luni_logo_124503.png'; // adjust path if needed
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -54,7 +55,15 @@ function Navbar() {
   return (
     <nav className="sticky top-0 z-50 flex justify-between items-center p-4 bg-white text-green-500  shadow-md">
       {/* Logo Section */}
-      <div className="text-xl font-bold">Logo</div>
+      <div className="text-xl font-bold"> 
+        <a href="/">
+      <img
+        src={luniLogo}
+        alt="LUNI Logo"
+        className="h-10 w-auto object-contain"
+        style={{ maxHeight: '40px' }}
+      />
+    </a></div>
 
       {/* Desktop Navigation Links */}
       <ul

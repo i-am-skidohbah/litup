@@ -16,7 +16,7 @@ function SpecialOfferAdmin() {
 
   const fetchOffers = async () => {
     try {
-      const querySnapshot = await getDocs(collection(db, 'special'));
+      const querySnapshot = await getDocs(collection(db, 'lightup', 'someDocId', 'special'));
       const offersData = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
       setOffers(offersData);
     } catch (error) {
@@ -34,7 +34,7 @@ function SpecialOfferAdmin() {
     setErrorMsg('');
     if (!newOffer.name || !newOffer.price) return;
     try {
-      await addDoc(collection(db, 'special'), newOffer);
+      await addDoc(collection(db, 'lightup', 'someDocId', 'special'), newOffer);
       setNewOffer({ name: '', price: '', details: '', imageUrl: '', expiresAt: '' });
       fetchOffers();
     } catch (error) {
@@ -44,7 +44,7 @@ function SpecialOfferAdmin() {
 
   const handleDeleteOffer = async (id) => {
     try {
-      await deleteDoc(doc(db, 'special', id));
+      await deleteDoc(doc(db, 'lightup', 'someDocId', 'special', id));
       setOffers(offers.filter(offer => offer.id !== id));
     } catch (error) {
       setErrorMsg('Error deleting offer: ' + (error.message || error));

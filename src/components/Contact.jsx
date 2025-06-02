@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { getFirestore, collection, addDoc, serverTimestamp } from 'firebase/firestore';
-import { firebaseApp } from '../firebaseConfig';
+import { firebaseApp } from '../FirebaseConfig';
 
 function Contact() {
   const [form, setForm] = useState({
@@ -51,26 +51,31 @@ function Contact() {
         <div className="flex-1 flex flex-col justify-center text-white px-4 py-8">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get in touch with us</h2>
           <p className="mb-6 text-green-100">
-            Quam interdum risus risus urna purus sem. Vel quam ultrices eros ac maecenas tellus ipsum mus. Quis fusce viverra eu sollicitudin leo vel. Consequat sodales enim vestibulum faucibus. Scelerisque dictum quis dictum rhoncus mauris sed sit pellentesque.
+            We offer innovative, afforable, and sustainable solar energy solutions to power homes and businesses across Nigeria, reducing energy costs and promoting environmental responsibility with the use of lithium phosphate technology.
           </p>
           <div className="mb-4">
             <span className="font-semibold">Support Center 24/7</span>
-            <div className="text-2xl font-bold text-green-400 mb-2">+1 285 842 2194</div>
+            <div className="text-2xl font-bold text-green-400 mb-2">WhatsApp: +234 8033058892</div>
           </div>
           <div className="mb-2">
             <span className="font-semibold">Our Location</span>
-            <div>76 Main Boulevard Ramada Inn City,<br />New York, USA</div>
+            <div>Owerri: No 5-6 Samek Road, Allbond House, Ground Floor, off IMSU junction, Imo State, Nigeria<br />
+
+            Lagos: 97 Okota, Ago Roundabout, Lagos <br />
+
+            Abuja : ASURI office, No1 Omotayo Eremiye Crescent, Arab road, Kubwa FCT,<br /></div>
           </div>
+          
           <div className="mb-2">
             <span className="font-semibold">Write To Us</span>
-            <div>Demo@surecall.com</div>
+            <div>customercare@lightupnigeria.ng</div>
           </div>
           <div>
             <span className="font-semibold">Office Timings</span>
             <div>
               <span className="inline-block w-2 h-2 bg-green-400 rounded-full mr-2"></span>
               09:00 am - 05:00 pm<br />
-              Monday - Thursday
+              Monday - Saturday
             </div>
           </div>
         </div>

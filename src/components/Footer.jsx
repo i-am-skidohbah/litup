@@ -25,8 +25,9 @@ function Footer() {
         {/* Contact & Social */}
         <div className="text-center md:text-right">
           <h3 className="font-semibold mb-2">Contact Us</h3>
-          <p className="text-gray-400 text-sm mb-1">info@lightupnigeria.com</p>
-          <p className="text-gray-400 text-sm mb-3">+234 800 000 0000</p>
+          <p className="text-gray-400 text-sm mb-1">info@lightupnigeria.ng</p>
+          <p className="text-gray-400 text-sm mb-3">Office Line: +234 8071690144 <br/>
+WhatsApp: +234 8033058892</p>
           <div className="flex justify-center md:justify-end gap-4 mt-2">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400"><FaFacebookF /></a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400"><FaTwitter /></a>

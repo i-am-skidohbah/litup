@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
-import { firebaseApp } from '../firebaseConfig'; // Adjust the path to your Firebase config file
+import { firebaseApp } from '../FirebaseConfig'; // Adjust the path to your Firebase config file
 
 function Firstrow() {
   return (
@@ -9,7 +9,7 @@ function Firstrow() {
       <div className="flex-1 max-w-2xl bg-white rounded-2xl shadow-lg p-8 md:p-12 z-10 relative">
         <div className="flex items-center gap-2 text-red-500 text-sm font-semibold mb-2">
           <svg className="w-5 h-5 inline-block" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M22 16.92V19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-2.08a2 2 0 0 1 1.1-1.79l8-4.6a2 2 0 0 1 1.8 0l8 4.6a2 2 0 0 1 1.1 1.79z" /></svg>
-          <span>+1 235 456 7890</span>
+          <span>+234 8071690144</span>
         </div>
         <h1 className="text-3xl md:text-2xl font-bold mb-4 text-black leading-tight">Welcome to Our World of Solar Power Excellence!</h1>
         <p className="text-gray-700 mb-6 text-base md:text-lg">Lightup Nigeria Solar Power Ltd was incorporated in August 2020 with the Corporate Affairs Commission under the Company and Allied Masters Act Laws of the Federation of Nigeria with RC No: 1700859.
@@ -24,9 +24,9 @@ function Firstrow() {
           </button>
         </div>
         <div className="flex items-center gap-3 mt-4">
-          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="user1" className="w-10 h-10 rounded-full border-2 border-white -ml-2 first:ml-0" />
+          {/*<img src="https://randomuser.me/api/portraits/men/32.jpg" alt="user1" className="w-10 h-10 rounded-full border-2 border-white -ml-2 first:ml-0" />
           <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="user2" className="w-10 h-10 rounded-full border-2 border-white -ml-2" />
-          <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="user3" className="w-10 h-10 rounded-full border-2 border-white -ml-2" />
+          <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="user3" className="w-10 h-10 rounded-full border-2 border-white -ml-2" />*/}
           <span className="ml-2 text-gray-700 text-base">Join with <span className="font-bold">4600+</span> Customers and<br />start your fitness journey.</span>
         </div>
       </div>

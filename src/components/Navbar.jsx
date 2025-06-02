@@ -68,6 +68,7 @@ function Navbar() {
         <li><a href="/training" className="hover:text-green-900">Training</a></li>
         <li><a href="/contact" className="hover:text-green-900">Contact</a></li>
         <li><a href="/news" className="hover:text-green-900">News</a></li>
+        <li><a href="/about" className="hover:text-green-900">About</a></li>
       </ul>
 
       {/* Account Dropdown or Login/Signup */}
